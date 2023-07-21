@@ -124,3 +124,92 @@ header .container {
     top: 0;
     right: 0;
 }
+/* articlas */
+.articlas{
+    padding: 0 229px 200px;
+}
+.articlas-get{
+    color: var(--accent, #FBD784);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 96px;
+    margin-bottom: 27px;
+}
+.articlas-get::after{
+    content: '';
+    display: block;
+    width: 72px;
+    height: 2px;
+    background: #FBD784;
+    position: absolute;
+    top: 33%;
+    left: -96px;
+    right: 0;
+}
+.articlas-title{
+    color: #FFF;
+    max-width: 560px;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 27px;
+}
+.articlas-text{
+    color: white;
+    font-size: 18px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    max-width: 632px;
+    margin-bottom: 27px;
+}
+.articlas-more{
+    color: var(--accent, #FBD784);
+    font-size: 18px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+}
+.articlas-more::after{
+    content: '';
+    background-image: url(../images/arrow2.png);
+    display: block;
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    top: 2px;
+    left: 103px;
+    background-repeat: no-repeat;
+}
+.articlas-item{
+    display: flex;
+    outline: solid green;
+    margin-bottom: 200px;
+    background-image: url(../images/equipment-01.png);
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    
+}
+.articlas-item:last-child{
+    margin-bottom: 0; 
+    background-image: url(../images/equipment-03.png);
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+}
+.articlas-box{
+    margin: 141px 114px 140px 150px;
+}
+.articlas-item:nth-child(2) {
+    background-image: url(../images/equipment-02.png);
+    background-repeat: no-repeat;
+    flex-direction: row-reverse;
+    background-position: 60% 10%;
+}
+    
