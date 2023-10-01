@@ -6,7 +6,9 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
     font-family: 'Montserrat';
     background: var(--bg, #0B1D26);
@@ -58,8 +60,23 @@ header .container {
     line-height: normal;
     margin-left: auto;
 }
-
+.header-icon{
+    width: 24px;
+    height: 24px;
+    fill: #FFF;
+}
+.header-account{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 /* hero */
+.hero-icon{
+    width: 16px;
+    height: 24px;
+    transform: rotate(90deg);
+    fill:#FBD784;
+}
 .hero-suptitle{
     color:#FBD784;
     font-size: 18px;
@@ -86,13 +103,15 @@ header .container {
     margin-top: 32px;
     margin-bottom: 33px;
 }
-.hero-text{
+.hero-link{
     color: #FFF;
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
     position: relative;
-    width: 142px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 .hero{
     background-image: url(../images/hero-bg.jpg);
@@ -114,7 +133,7 @@ header .container {
     top: 33%;
     left: 0;
 }
-.hero-text::after{
+/* .hero-text::after{
     content: '';
     background-image: url(../images/arrow.png);
     display: block;
@@ -123,8 +142,12 @@ header .container {
     position: absolute;
     top: 0;
     right: 0;
-}
+} */
 /* articlas */
+.articals-icon{
+    transform: rotate(0);
+    
+}
 .articlas{
     padding: 0 229px 200px;
 }
@@ -177,7 +200,7 @@ header .container {
     line-height: normal;
     position: relative;
 }
-.articlas-more::after{
+/* .articlas-more::after{
     content: '';
     background-image: url(../images/arrow2.png);
     display: block;
@@ -187,7 +210,7 @@ header .container {
     top: 2px;
     left: 103px;
     background-repeat: no-repeat;
-}
+} */
 .articlas-item{
     display: flex;
     outline: solid green;
