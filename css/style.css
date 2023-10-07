@@ -39,7 +39,9 @@ header .container {
     text-transform: capitalize;
     margin-right: 631px;
 }
-
+.header-logo:hover, .header-logo:focus, .header-link:focus, .header-link:hover, .header-account:hover .header-account:focus{
+    color: rgba(140, 207, 31, 0.705);
+}
 .header-list {
     display: flex;
     align-items: center;
@@ -199,6 +201,8 @@ header .container {
     font-weight: 700;
     line-height: normal;
     position: relative;
+    display: flex;
+    gap: 16px;
 }
 /* .articlas-more::after{
     content: '';
